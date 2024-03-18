@@ -30,6 +30,7 @@
             </button>
           </div>
         </nav>
+    </header>
 
         <div class="container-fluid">
             <div class="row">
@@ -114,8 +115,125 @@
                   </ul>
                 </div>
               </div>
-      </header>
 
+          <!-- Main -->
+          <main class="col-md-8 col-lg-9">
+            <div class="container">
+              <div class="text-center mt-4">
+                <h1>Crea nuovo prodotto</h1>
+                <p>i campi contassegnati con un asterisco (*) sono obbligatori. Le immagini devono essere in formato PNG e
+                  non
+                  devono superare i 4 MB di dimensione</p>
+              </div>
+              <!-- SEZIONE DEL FORM -->
+              <!-- CARATTERISTICHE DEL FORM -->
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="mb-3 d-md-flex gap-3">
+                    <label for="name" class="form-label ">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Il tuo nome">
+                  </div>
+                  <!-- PREZZO -->
+                  <div class="mb-4 d-md-flex gap-3">
+                    <label for="price" class="form-label ">Prezzo</label>
+                    <input type="text" class="form-control" id="price" placeholder="99.00">
+                  </div>
+                  <!-- SELEZIONE OPZIONI -->
+                  <div class="d-md-flex gap-3">
+                    <span class="">Marca</span>
+                    <select class="form-select mb-1" id="marca" aria-label="Default select example">
+                      <option selected>---Seleziona---</option>
+                      <option value="1">Apple</option>
+                      <option value="2">Samsung</option>
+                      <option value="3">Xiaomi</option>
+                    </select>
+                  </div>
+                  <!-- TEXTAREA -->
+                <div class="mb-3 col-md-12 col-lg-12">
+                  <label for="exampleFormControlTextarea1" class="form-label"></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1"
+                    placeholder="Inserisci qui la descrizione del prodotto con al massimo di 1000 caratteri"
+                    rows="4"></textarea>
+                </div>
+                <!--INPUT FILE -->
+                <div class="col-md-12">
+                  <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                  </div>
+                </div>
+                <!-- GRUPPO DEI RADIO BUTTON -->
+                <div class="btn-group col-12 col-md-12 col-lg-12 mb-3" role="group"
+                  aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                  <label class="btn btn-outline-secondary btn-sm" for="btnradio1">Disponibile</label>
+    
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                  <label class="btn btn-outline-secondary btn-sm" for="btnradio2">Esaurito</label>
+    
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                  <label class="btn btn-outline-secondary btn-sm" for="btnradio3">Fuori produzione</label>
+    
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                  <label class="btn btn-outline-secondary btn-sm" for="btnradio4">In arrivo</label>
+                </div>
+                </div>
+                <!-- FRUPPO DEI CHECKBOX CON LE CARATTERISTICHE -->
+                <div class="col-12 d-none d-lg-block col-lg-6">
+                    <!-- LISTA -->
+                  <ul class="list-group">
+                    <!-- FOTOCAMERA -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="fotocamera">
+                      <label class="form-check-label" for="fotocamera">Fotocamera principale</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="fotocamera">Foto di alta qualità e registrazione di video nitidi</label>
+                    </li>
+                    <!-- SCHERMO OLED -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="schermo">
+                      <label class="form-check-label" for="schermo">Schermo Oled</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="schermo">Offre colori vividi per un'esperienza visiva straordinaria</label>
+                    </li>
+                    <!-- PROCESSORE -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="cpu">
+                      <label class="form-check-label" for="cpu">Processore Bionic</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="cpu">Prestazioni piu fluide e veloci</label>
+                    </li>
+                    <!-- RICARICA WIRELESS -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="wireless">
+                      <label class="form-check-label" for="wireless">Ricarica Wireless</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="Wireless">consente di ricareicare lo smartphone senza l'uso di cavi</label>
+                    </li>
+                    <!-- 5G -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="iphone-3">
+                      <label class="form-check-label" for="iphone-3">Connessione 5G</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="iphone-3">Navigazione Ultra veloce</label>
+                    </li>
+                    <!-- NFC -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="NFC">
+                      <label class="form-check-label" for="NFC">Tecnologia NFC</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="NFC">per pagamenti Contactless</label>
+                    </li>
+                    <!-- AIRDROP -->
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="airdrop">
+                      <label class="form-check-label" for="airdrop">AirDrop</label>
+                      <br>
+                      <label class="form-check-label text-secondary ps-4" for="airdrop">PPer trasferimenti di file veloci</label>
+                    </li>
+                  </ul>
+                </div>
+                
 
 
 
