@@ -30,6 +30,90 @@
             </button>
           </div>
         </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+              <!-- SIDEBAR -->
+              <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
+                <a href="@"
+                  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none flex-column">
+                  <!-- IMMAGINE PROFILO -->
+                  <svg class="pe-none" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                  <!-- NOME SIDEBAR -->
+                  <span class="fs-4 d-none d-md-block">Boostrap Dashboard</span>
+                  <hr class="border w-100 opacity-100 text-white">
+                </a>
+                <!-- LISTA CON I LINK -->
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item fw-medium">
+                    <a href="./index.html" class="nav-link" aria-current="page">
+                      <svg class="pe-none" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                      </svg>
+                      <i class="fa-solid fa-house"></i> Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./sponsor.html " class="nav-link text-white fw-medium">
+                      <svg class="pe-none" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                      </svg>
+                      <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./products.html" class="nav-link text-white fw-medium active">
+                      <svg class="pe-none" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                      </svg>
+                      <i class="fa-solid fa-box-archive"></i> Prodotti
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./new-products.html" class="nav-link text-white fw-medium">
+                      <svg class="pe-none" width="16" height="16">
+                        <use xlink:href="#grid"></use>
+                      </svg>
+                      <i class="fa-solid fa-plus"></i> Nuovi Prodotti
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white fw-medium">
+                      <svg class="pe-none" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                      </svg>
+                      <i class="fa-solid fa-people-arrows"></i> Clienti
+                    </a>
+                  </li>
+                </ul>
+                <hr />
+                <!-- MENU A DROPDOWN dell'utente-->
+                <div class="dropdown d-none d-md-block">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle ps-4"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="user image" width="32" height="32" class="rounded-circle me-2" />
+                    <strong>Mirco Mirelli</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Esci</a></li>
+                  </ul>
+                </div>
+                <!-- impostazioni profilo -->
+                <div class="d-md-none">
+                  <ul class="list-group list-group-flush ps-3">
+                    <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Profilo</li>
+                    <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Esci</li>
+                    <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Impostazioni</li>
+                  </ul>
+                </div>
+              </div>
       </header>
 
 
